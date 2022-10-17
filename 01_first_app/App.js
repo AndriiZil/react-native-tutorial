@@ -5,7 +5,8 @@ import {
   View,
   Button,
   Alert,
-  TextInput
+  TextInput,
+  ScrollView,
 } from 'react-native';
 
 export default function App() {
@@ -39,15 +40,17 @@ export default function App() {
         />
       </View>
       <View style={styles.goalsContainer}>
-        {
-          courseGoals.map(
-            (courseGoal, index) => (
-              <View key={index} style={styles.goalItem}>
-                <Text style={styles.goalText}>{courseGoal}</Text>
-              </View>
+        <ScrollView alwaysBounceVertical={false}>
+          {
+            courseGoals.map(
+              (courseGoal, index) => (
+                <View key={index} style={styles.goalItem}>
+                  <Text style={styles.goalText}>{courseGoal}</Text>
+                </View>
+              )
             )
-          )
-        }
+          }
+        </ScrollView>
       </View>
     </View>
   )
