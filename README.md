@@ -8,3 +8,7 @@
 ```bash
   expo init <project_name>
 ```
+### Install React Dev Tools
+```bash
+  sudo npm install -g react-devtools
+```
