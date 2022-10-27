@@ -12,3 +12,9 @@
 ```bash
   sudo npm install -g react-devtools
 ```
+### Install font
+```bash
+  expo install expo-font
+  
+  expo install expo-app-loading
+```
